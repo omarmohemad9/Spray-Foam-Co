@@ -1,0 +1,234 @@
+:root {
+    --intro-col: gray;
+    --nav-cl: #f9f9fb
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Vazirmatn", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    line-height: 1.6;
+
+    direction: rtl;
+    text-align: right;
+}
+
+
+
+
+/*  ---------  */
+/* Handle design  */
+.container {
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* small size  */
+@media only screen and (min-width: 768px) {
+    .container {
+        width: 768px;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .container {
+        width: 992px;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1200px;
+    }
+}
+
+/* ---------- */
+
+/* whatsapp Icon Contact */
+
+.whatsApp-icon {
+    position: fixed;
+    right: 50px;
+    bottom: 50px;
+}
+
+@media (max-width:768px) {
+    .whatsApp-icon {
+        right: 30px;
+        bottom: 30px;
+    }
+
+}
+
+.whatsApp-icon img {
+    width: 80px;
+}
+
+@media (max-width:768px) {
+    .whatsApp-icon img {
+        width: 60px;
+    }
+}
+
+/* introduction styles  */
+.Intro {
+    background-color: var(--intro-col);
+
+}
+
+.Intro .container ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding: 15px 0;
+    justify-content: center;
+}
+
+
+.Intro .container ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.1s;
+}
+
+.Intro .container ul li a:hover {
+    color: rgba(255, 255, 255, 0.438);
+}
+
+.Intro .container .intro-text {
+
+    padding: 80px 0;
+    text-align: center;
+
+}
+
+.Intro .container .intro-text h1 {
+    color: white;
+    font-size: 40px;
+    text-shadow: 0 0 10px #0000008c;
+    font-size: 56px;
+}
+
+/* _______  */
+/* about us section */
+.about {
+    padding: 40px 0;
+}
+
+.about .container {
+    text-align: center;
+}
+
+.about .container h1 {
+    position: relative
+}
+
+.about .container h1:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00000052;
+    width: 100px;
+    height: 1px;
+}
+
+.about .container p {
+    margin: 15px auto;
+    max-width: 1000px;
+
+}
+
+/* -----------  */
+.Service {
+    padding: 30px 0;
+}
+
+.Service .container h1.title_ba {
+    text-align: center;
+    position: relative;
+}
+
+.Service .container h1.title_ba:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #00000052;
+    width: 100px;
+    height: 1px;
+}
+
+.Service .container .box {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.Service .container .box {}
+
+.Service .container .box .bullets {
+    height: fit-content;
+    width: calc(98%/2);
+    margin-top: 50px;
+    padding-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.158);
+}
+
+@media (max-width:992px) {
+    .Service .container .box .bullets {
+        width: 100%;
+    }
+}
+
+.Service .container .box .bullets .img {
+    height: 70%;
+    width: 100%;
+}
+
+.Service .container .box .bullets .img img {
+    background-position: center;
+    width: 100%;
+    height: 100%;
+}
+
+.Service .container .box .bullets h1 {
+    text-align: center;
+    margin: 10px 0
+}
+
+.Service .container .box .bullets p {
+    text-align: center;
+    padding: 0 10px;
+
+    /* margin: 10px 10px 20px; */
+
+}
+
+/* __________  */
+
+/* footer section  */
+
+footer {
+    background: var(--intro-col);
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
